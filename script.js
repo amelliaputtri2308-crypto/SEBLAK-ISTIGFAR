@@ -230,7 +230,7 @@ document.getElementById("checkoutForm").addEventListener(
       (sum, item) => sum + item.harga * item.qty, 0
     );
 
-    let pesan = `🌶️ *PESANAN SEBLAK YUK!*\n\n`;
+    let pesan = `🌶️ *PESANAN SEBLAK ISTIGFAR!*\n\n`;
     pesan += `Nama: ${nama}\n`;
     pesan += `No. HP pelanggan: ${telepon}\n`;
     pesan += `Jenis pesanan: ${jenis}\n`;
