@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#b91c1c">
+  <meta name="description" content="Pesan seblak favoritmu dengan mudah!">
+  <title>Seblak Yuk! - Pedasnya Bikin Nagih</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="#" class="logo">🌶️ Seblak<span>Yuk!</span></a>
+    <a href="#menu" class="nav-button">Pesan Sekarang</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="tag">🔥 PEDAS • GURIH • NAGIH</span>
+        <h1>Seblak Enak,<br><span>Bikin Nagih!</span></h1>
+        <p>Pilih topping favoritmu, atur level pedasnya, dan nikmati seblak hangat kesukaanmu.</p>
+        <a href="#menu" class="primary-button">Lihat Menu ↓</a>
+      </div>
+      <div class="hero-emoji">🍜</div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading">
+        <span class="tag">MENU FAVORIT</span>
+        <h2>Pilih Seblakmu!</h2>
+        <p>Mau yang biasa atau ekstra pedas?</p>
+      </div>
+
+      <div class="menu-grid" id="menuGrid"></div>
+
+      <section class="order-panel" id="order">
+        <div class="section-heading">
+          <span class="tag">PESANANMU</span>
+          <h2>Keranjang 🛒</h2>
+        </div>
+
+        <div id="cartItems" class="cart-items">
+          <p class="empty-cart">Keranjangmu masih kosong nih.</p>
+        </div>
+
+        <div class="total-row">
+          <span>Total pembayaran</span>
+          <strong id="total">Rp0</strong>
+        </div>
+
+        <form id="checkoutForm">
+          <label for="customerName">Nama pemesan</label>
+          <input id="customerName" type="text"
+                 placeholder="Masukkan nama kamu" required>
+
+          <label for="customerPhone">Nomor HP kamu</label>
+          <input id="customerPhone" type="tel"
+                 placeholder="Contoh: 081234567890" required>
+
+          <label for="orderType">Jenis pesanan</label>
+          <select id="orderType">
+            <option value="Diambil sendiri">Ambil sendiri</option>
+            <option value="Diantar">Diantar</option>
+          </select>
+
+          <label for="customerAddress">Alamat / catatan lokasi</label>
+          <textarea id="customerAddress"
+                    placeholder="Alamat jika diantar atau catatan pesanan"
+                    rows="3"></textarea>
+
+          <label for="notes">Catatan tambahan</label>
+          <textarea id="notes" rows="2"
+                    placeholder="Contoh: jangan terlalu asin"></textarea>
+
+          <button class="checkout-button" type="submit">
+            Pesan via WhatsApp ↗
+          </button>
+          <p class="small-note">
+            Pesanan akan dikirim ke WhatsApp penjual untuk dikonfirmasi.
+          </p>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>🌶️ <strong>Seblak Yuk!</strong></p>
+    <p>Terima kasih sudah jajan di tempat kami ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
